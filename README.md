@@ -1,4 +1,4 @@
-# Actividad 07 (Unidad II) — Clustering lineal y no lineal, métricas de validación
+# Actividad 07 (Unidad II)  Clustering lineal y no lineal, métricas de validación
 
 **Universidad Nacional del Altiplano Puno · Maestría en Ciencia de Datos · Aprendizaje de Máquina I, Grupo A**
 
@@ -55,7 +55,7 @@ resultados_iris = entrenar_modelos(X_iris_s, n_clusters=3, dbscan_eps=0.65, dbsc
 
 ### ¿Qué significan estas métricas? (2 pts)
 
-El método del codo sugiere 2–3 grupos, coherente con las 3 especies, aunque *versicolor* y *virginica* se solapan bastante en el espacio de características. KMeans y SpectralClustering logran ARI/V-measure moderados-altos (~0.55–0.68) separando bien *setosa* pero confundiendo parte de las otras dos especies. DBSCAN obtiene un ARI algo menor porque, al basarse en densidad, fusiona o deja como ruido puntos de la zona solapada — esos 7 puntos con etiqueta `-1` corresponden a observaciones donde la densidad local no alcanza el umbral `min_samples`. Su Davies-Bouldin es mucho peor (14.321 vs ~0.83) porque genera un cluster pequeño y disperso que distorsiona esta métrica interna; ARI/V-measure no penalizan tanto este efecto porque esos puntos sí pertenecían a su clase real.
+El método del codo sugiere 2–3 grupos, coherente con las 3 especies, aunque *versicolor* y *virginica* se solapan bastante en el espacio de características. KMeans y SpectralClustering logran ARI/V-measure moderados-altos (~0.55–0.68) separando bien *setosa* pero confundiendo parte de las otras dos especies. DBSCAN obtiene un ARI algo menor porque, al basarse en densidad, fusiona o deja como ruido puntos de la zona solapada, esos 7 puntos con etiqueta `-1` corresponden a observaciones donde la densidad local no alcanza el umbral `min_samples`. Su Davies-Bouldin es mucho peor (14.321 vs ~0.83) porque genera un cluster pequeño y disperso que distorsiona esta métrica interna; ARI/V-measure no penalizan tanto este efecto porque esos puntos sí pertenecían a su clase real.
 
 ---
 
