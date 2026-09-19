@@ -4,7 +4,7 @@
 
 **Integrante(s):** 
 - Jose Jhonatan Quispe Cartagena
-- Oscar Edy Vilca Quis
+- Oscar Edy Vilca Quispe
 
 ## Objetivo
 
