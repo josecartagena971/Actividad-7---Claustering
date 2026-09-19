@@ -11,8 +11,7 @@ Comparar tres algoritmos de clustering: **K-means**, **DBSCAN** y **SpectralClus
 
 Y determinando la **naturaleza lineal o no lineal** de cada modelo.
 
-📓 Notebook completo con todo el código y las visualizaciones: [`Actividad_07_Clustering(1).ipynb`](./Actividad_07_Clustering(1).ipynb)
-📓 **Notebook completo con todo el código y las visualizaciones:** [Abrir Notebook: Actividad_07_Clustering (1).ipynb](./Actividad_07_Clustering%20%281%29.ipynb)
+**Notebook completo con todo el código y las visualizaciones:** [Abrir Notebook: Actividad_07_Clustering (1).ipynb](./Actividad_07_Clustering%20%281%29.ipynb)
 
 ## Metodología general
 
