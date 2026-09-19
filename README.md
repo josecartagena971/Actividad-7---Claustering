@@ -74,7 +74,7 @@ resultados_moons = entrenar_modelos(X_moons_s, n_clusters=2, dbscan_eps=0.24, db
 | DBSCAN (eps=0.24) | 2 | 0 | **1.000** | **1.000** | 0.382 | 1.023 |
 | SpectralClustering | 2 | 0 | **1.000** | **1.000** | 0.382 | 1.023 |
 
-### ¿Qué significan estas métricas? (2 pts)
+### ¿Qué significan estas métricas?
 
 El método del codo no muestra un codo claro en k=2 — al basarse en distancia a un centroide, no puede reflejar la estructura no convexa de los datos. KMeans, limitado a fronteras lineales, corta ambas medialunas por la mitad (ARI≈0.48). DBSCAN y SpectralClustering, al permitir separación no lineal, alcanzan ARI/V-measure **perfectos** (1.000). Aun así, su Silhouette (~0.38) no es cercano a 1, porque esta métrica interna también asume forma convexa: un resultado externamente perfecto puede verse "mediocre" según una métrica interna, cuando en realidad el cluster real simplemente no es compacto.
 
@@ -95,7 +95,7 @@ resultados_circles = entrenar_modelos(X_circles_s, n_clusters=2, dbscan_eps=0.32
 | DBSCAN (eps=0.32) | 2 | 0 | **1.000** | **1.000** | 0.110 | 163.270 |
 | SpectralClustering | 2 | 0 | **1.000** | **1.000** | 0.110 | 163.270 |
 
-### ¿Qué significan estas métricas? (2 pts)
+### ¿Qué significan estas métricas?
 
 Este es el caso más extremo. KMeans obtiene ARI≈0 (equivalente a una asignación aleatoria), porque ambos círculos comparten el mismo centro y no existe una línea recta que los separe. DBSCAN y SpectralClustering alcanzan de nuevo ARI/V-measure perfectos (1.000). Sin embargo, su Silhouette es muy bajo (0.110) y su Davies-Bouldin es extremadamente alto/malo (163.270) — mucho peor que el de KMeans, que en realidad falló. Esto ocurre porque ambos círculos comparten centro: cualquier métrica interna basada en distancia a un centroide interpreta que están "encimados", aunque estén perfectamente separados según la verdad fundamental.
 
