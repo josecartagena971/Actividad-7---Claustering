@@ -1,6 +1,6 @@
 # Actividad 07 (Unidad II)  Clustering lineal y no lineal, métricas de validación - Resumen Ejecutivo
 
-**Universidad Nacional del Altiplano Puno · Maestría en Ciencia de Datos · Aprendizaje de Máquina I, Grupo A**
+**Universidad Nacional del Altiplano Puno · Maestría en Ciencia de Datos · Machine Learning I, Grupo A**
 
 ## Objetivo
 
