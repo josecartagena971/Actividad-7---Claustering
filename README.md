@@ -4,7 +4,7 @@
 
 ## Objetivo
 
-Comparar tres algoritmos de clustering — **K-means**, **DBSCAN** y **SpectralClustering** — sobre tres datasets con geometrías distintas (**Iris**, **Moons**, **Circles**), evaluando cada resultado con:
+Comparar tres algoritmos de clustering: **K-means**, **DBSCAN** y **SpectralClustering** sobre tres datasets con geometrías distintas (**Iris**, **Moons**, **Circles**), evaluando cada resultado con:
 
 - **Métricas de validación externa** (necesitan etiquetas reales): Adjusted Rand Index (ARI), V-measure.
 - **Métricas de validación interna** (no necesitan etiquetas reales): Silhouette Score, Davies-Bouldin Index, método del codo (Elbow).
